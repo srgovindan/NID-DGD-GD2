@@ -5,6 +5,8 @@ public class SimpleTimer : MonoBehaviour
     public float timerDuration = 2f;
     private float timer= 0f;
 
+    public PlayAudio myAudioScript;
+    
     // Update is called once per frame
     void Update()
     {
@@ -14,13 +16,18 @@ public class SimpleTimer : MonoBehaviour
         if (timer < timerDuration)
         {
             timer = timer + Time.deltaTime;
-            Debug.Log(timer);
+            //Debug.Log(timer);
         }
         else
         {
             //the timer duration has passed 
             //do something else 
-            Debug.Log("DO COOL TIMED STUFF.");
+            //Debug.Log("DO COOL TIMED STUFF.");
+            
+            //play the audio from another audio source 
+            //myAudioScript.audioSource
+            //myAudioScript.
+            
             timer = 0;
         }
         

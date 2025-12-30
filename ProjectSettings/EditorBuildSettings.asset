@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/2_PhysicsJoints.unity
+    guid: 5b2ffbed3aa1073429d2787df68fc4b3
+  - enabled: 1
     path: Assets/Scenes/1_Sprites.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
