@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 /// <summary>
 /// This script will select a random BGM track from a list at start.
 /// Then it loops that track.
@@ -8,6 +7,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioClip[] bgmTracks;
+    public AudioClip timerEndAudioClip;
     
     void Start()
     {
@@ -22,10 +22,12 @@ public class AudioManager : MonoBehaviour
         
         //change the volume
         audioSource.volume = .75f;
-
-        //play the track
-        //dont need to call this if we already have play on start enabled 
-        //GetComponent<AudioSource>().Play();
+        
     }
-    
+
+    public void PlayTimerEndClip()
+    {
+        //play the track
+        GetComponent<AudioSource>().PlayOneShot(timerEndAudioClip);
+    }
 }

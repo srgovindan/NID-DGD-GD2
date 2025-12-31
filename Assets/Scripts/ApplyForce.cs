@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 //Put this script on an object to apply force at start 
 public class ApplyForce : MonoBehaviour
 {
@@ -15,7 +14,6 @@ public class ApplyForce : MonoBehaviour
     {
         //Get references
         rb = GetComponent<Rigidbody>();
-
         
         //create the force vector 
         Vector3 forceVector = direction * force;

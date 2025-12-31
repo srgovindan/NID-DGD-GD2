@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-
+    //Public variables
     public GameObject objectToSpawn;
     public Vector3 spawnPos;
     public Vector3 nextSpawnPosOffset = Vector3.one;
