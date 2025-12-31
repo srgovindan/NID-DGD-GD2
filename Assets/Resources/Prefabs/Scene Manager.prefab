@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7723544393402236008}
   - component: {fileID: 5534659973095067702}
   m_Layer: 0
-  m_Name: Scene Reloader
+  m_Name: Scene Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   scene1key: 113
   scene2key: 119
-  scene3key: 0
+  scene3key: 101
