@@ -30,5 +30,16 @@ public class GameManager : MonoBehaviour
     {
         points = points + changeInPoints;
         Debug.Log("Points: " + points);
+        
+        //do stuff when you get more than 20 points
+        if (points > 20)
+        {
+            //find the player game object
+            Player player = FindFirstObjectByType<Player>();
+            
+            //play confetti from player object 
+            player.PlayConfettiFX();
+            
+        }
     }
 }

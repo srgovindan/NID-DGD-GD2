@@ -1,9 +1,21 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
 
-    public ParticleSystem confettiParticleSystem;
+    private ParticleSystem confettiParticleSystem;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        //get the reference to the particle system that is on a child game object 
+        confettiParticleSystem = GetComponentInChildren<ParticleSystem>();
+
+        //get the audio source component attached to this gameobject 
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -12,16 +24,16 @@ public class Player : MonoBehaviour
             //the GM is a singleton so we can access it like this
             GameManager.instance.ChangePoints(7);
         }
-        
-        //if the player gets 20 points or more,
-        if (GameManager.instance.points > 20)
-        {
-            //play the confetti particle system
-            confettiParticleSystem.Play();
-        }
-
     }
-    
-    
-    
+
+    public void PlayConfettiFX()
+    {
+        Debug.Log("playing confetti particles and audio");
+        
+        //play the particle system
+        confettiParticleSystem.Play();
+        
+        //play audio fx for confetti
+        audioSource.Play();
+    }
 }
