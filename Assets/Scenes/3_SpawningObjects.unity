@@ -119,6 +119,113 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &244545252
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 646182923124455476, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_text
+      value: 'This scene has an object spawner script that spawns a trapdoor gameobject
+        when spacebar is pressed. The spawning position is moved everytime we spawn
+        a new trapdoor object. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471367655423590940, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506780266440845148, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239688678184123467, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
+      propertyPath: m_text
+      value: Spawning Objects
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51d1b1cff2d8a6e49becfffff2724f54, type: 3}
 --- !u!1 &1109437271
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +263,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.4745098, g: 0.19215688, b: 0.22182953, a: 0}
+  m_BackGroundColor: {r: 0.04552332, g: 0.2924528, b: 0.07156131, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -206,7 +313,7 @@ Transform:
   m_GameObject: {fileID: 1109437271}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.79, y: 1, z: -7.18}
+  m_LocalPosition: {x: 1.79, y: 1, z: -39.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -469,7 +576,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cfbaff4ce55694dbdbcf9bd69113b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  objectToSpawn: {fileID: 652106925446706276, guid: 4a9b91b5e09dca942868fe38189d23c8, type: 3}
   spawnPos: {x: 0, y: 0, z: 0}
+  nextSpawnPosOffset: {x: 1, y: 1, z: 1}
 --- !u!4 &2109390866
 Transform:
   m_ObjectHideFlags: 0
@@ -491,5 +600,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1109437274}
   - {fileID: 1641851667}
+  - {fileID: 244545252}
   - {fileID: 1266227878}
   - {fileID: 2109390866}

@@ -12,6 +12,7 @@ public class ChangeScenes : MonoBehaviour
     public KeyCode scene1key;
     public KeyCode scene2key;
     public KeyCode scene3key;
+    public KeyCode scene4key;
 
     void Start()
     {
@@ -46,18 +47,21 @@ public class ChangeScenes : MonoBehaviour
             Debug.Log("load the first scene");
             SceneManager.LoadScene("1_Sprites");
         }
-
-        if (Input.GetKeyDown(scene2key))
+        else if (Input.GetKeyDown(scene2key))
         {
             //load the second scene
             Debug.Log("load the second scene");
             SceneManager.LoadScene("2_PhysicsJoints");
         }
-
-        if (Input.GetKeyDown(scene3key))
+        else if (Input.GetKeyDown(scene3key))
         {
             Debug.Log("load the third scene");
-            SceneManager.LoadScene("3_Singletons");
+            SceneManager.LoadScene("3_SpawningObjects");
+        }
+        else if (Input.GetKeyDown(scene4key))
+        {
+            Debug.Log("load the third scene");
+            SceneManager.LoadScene("4_Singletons");
         }
     }
 }

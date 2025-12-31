@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,6 +9,7 @@ public class GameManager : MonoBehaviour
     
     //Public
     public int points;
+    public TMP_Text pointsText;
     
     void Start()
     {
@@ -28,7 +30,11 @@ public class GameManager : MonoBehaviour
 
     public void ChangePoints(int changeInPoints)
     {
+        //change the points variable 
         points = points + changeInPoints;
+        //update the text that shows the points
+        pointsText.text = "Points: " + points;
+        
         Debug.Log("Points: " + points);
         
         //do stuff when you get more than 20 points
@@ -39,7 +45,6 @@ public class GameManager : MonoBehaviour
             
             //play confetti from player object 
             player.PlayConfettiFX();
-            
         }
     }
 }

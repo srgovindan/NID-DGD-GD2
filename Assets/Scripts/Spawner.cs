@@ -3,36 +3,38 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
 
+    public GameObject objectToSpawn;
     public Vector3 spawnPos;
+    public Vector3 nextSpawnPosOffset = Vector3.one;
     
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SpawnTrapdoor();
+            SpawnObject();
         }
     }
 
-    public void SpawnTrapdoor()
+    public void SpawnObject()
     {
-        Debug.Log("Spawning a Trapdoor at :" + spawnPos);
+        Debug.Log("Spawning " + objectToSpawn.name + " at :" + spawnPos);
         
-        //create trapdoor! 
-        //instantiate the prefab
-        GameObject newTrapdoor = Instantiate(Resources.Load<GameObject>("Prefabs/Trapdoor"));
+        //instantiate the object from the reference
+        GameObject newGameObject = Instantiate(objectToSpawn);
+        
+        //alternatively, we can instantiate the prefab from a filepath 
+        //GameObject newGameObject = Instantiate(Resources.Load<GameObject>("Prefabs/Trapdoor"));
 
-        //Disable the trapdoor so it doesn't interfere with the exsiting ones 
-        newTrapdoor.gameObject.SetActive(false);
-        //newTrapdoor.GetComponent<FixedJoint>()
-        //newTrapdoor.AddComponent<>()
+        //Disable the trapdoor so it doesn't interfere with the existing ones 
+        newGameObject.gameObject.SetActive(false);
             
         //set the spawned gameobject to a new spawn position 
-        newTrapdoor.transform.position = spawnPos;
+        newGameObject.transform.position = spawnPos;
         
         //Reactivate the trapdoor gameobject
-        newTrapdoor.SetActive(true);
+        newGameObject.SetActive(true);
             
         //move the spawn position 
-        spawnPos = spawnPos + new Vector3(1f, 1f, 1f);
+        spawnPos = spawnPos + nextSpawnPosOffset;
     }
 }

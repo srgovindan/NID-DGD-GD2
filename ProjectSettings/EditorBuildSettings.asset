@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/1_Sprites.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
     path: Assets/Scenes/2_PhysicsJoints.unity
     guid: 5b2ffbed3aa1073429d2787df68fc4b3
   - enabled: 1
-    path: Assets/Scenes/1_Sprites.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/3_SpawningObjects.unity
+    guid: de93440c5f0cfd3449d554bfa1128e00
+  - enabled: 1
+    path: Assets/Scenes/4_Singletons.unity
+    guid: 2ebbccf563c47e4498a69644774315a1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
