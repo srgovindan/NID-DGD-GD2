@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
         //change the volume
         audioSource.volume = .75f;
 
-        //play that track
+        //play the track
         //dont need to call this if we already have play on start enabled 
         //GetComponent<AudioSource>().Play();
     }

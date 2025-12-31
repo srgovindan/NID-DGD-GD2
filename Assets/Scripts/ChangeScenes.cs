@@ -34,24 +34,30 @@ public class ChangeScenes : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            //reload the current scene 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        
         if (Input.GetKeyDown(scene1key))
         {
             //load the first scene
             Debug.Log("load the first scene");
-            UnityEngine.SceneManagement.SceneManager.LoadScene("1_Sprites");
+            SceneManager.LoadScene("1_Sprites");
         }
 
         if (Input.GetKeyDown(scene2key))
         {
             //load the second scene
             Debug.Log("load the second scene");
-            UnityEngine.SceneManagement.SceneManager.LoadScene("2_PhysicsJoints");
+            SceneManager.LoadScene("2_PhysicsJoints");
         }
 
         if (Input.GetKeyDown(scene3key))
         {
             Debug.Log("load the third scene");
-            UnityEngine.SceneManagement.SceneManager.LoadScene("3_Singletons");
+            SceneManager.LoadScene("3_Singletons");
         }
     }
 }
